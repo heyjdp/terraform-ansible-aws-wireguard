@@ -1,0 +1,10 @@
+---
+- name: Setup AWS Nginx server
+  hosts: all
+  remote_user: ubuntu
+  become: yes
+
+  roles:
+  - base
+  - harden
+  - nginx
